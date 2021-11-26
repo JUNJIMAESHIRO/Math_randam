@@ -1,0 +1,42 @@
+body{
+  font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+// ヘッダー部分の記述
+.top{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(104, 124, 30);
+  .header_left{
+    font-size: 35px;
+    color: white;
+    padding-left: 20px;
+    width: 30%;
+  }
+  .header_right{
+    width: 70%;
+    .Difficulty_level{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      li{
+        padding-right: 30px;
+        a{
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+// ヘッダー部分ここまで
+
+.title{
+  font-size: 35px;
+  text-align: center;
+  padding: 50px 20px;
+}

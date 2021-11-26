@@ -4,26 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./asset/css/reset.css">
-  <link rel="stylesheet" href="./asset/css/style.css">
-  <title>私の点数は何点？</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Math randam</title>
 </head>
 <body>
-  <header>
-
+  <header class="top">
+    <div class="header_left">
+      <p>Killing Time</p>
+    </div>
+    <div class="header_right">
+      <ul class="Difficulty_level">
+        <li><a href="">Easy</a></li>
+        <li><a href="">Normal</a></li>
+        <li><a href="">Hard</a></li>
+      </ul>
+    </div>
   </header>
-  <section>
-    <div>
-      <h1>私のテストは何点だったでしょう？</h1>
+  <section> 
+    <h1 class="title">What did him score on the test?</h1>
+    <div class="youser_put_number">
+      <input type="text" id="text" placeholder="Take a guess!">
+      <button>push here!</button>
     </div>
-    <div>
-      <input type="text" id="text" placeholder="数字を入力してね！">
-    </div>
-    
   </section>
-
+  <section class="js_results">
+    <div class="farst_results">
+      <p> Awesome!!</p>
+    </div>
+    <div class="total_results">
+      <p>This time you hit it with in 3 time</p>
+      <button>again?</button>
+    </div>
+  </section>
+  <footer>
+    <p>株式会社純次コーポレーション</p>
+  </footer>
+  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="./asset/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
