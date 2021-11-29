@@ -1,33 +1,43 @@
+// 変数一覧
+
+$mar1: 0 auto;
+$whiteColor: white;
+
+// 変数ここまで
 body{
   font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
   font-size: 20px;
+  background-color: rgb(229, 238, 231);
 }
 // ヘッダー部分の記述
 .top{
-  height: 10vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgb(104, 124, 30);
-  .header_left{
-    font-size: 35px;
-    color: white;
-    padding-left: 20px;
-    width: 30%;
-  }
-  .header_right{
-    width: 70%;
-    .Difficulty_level{
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      li{
-        padding-right: 30px;
-        a{
-          text-decoration: none;
-          font-size: 20px;
-          color: white;
+  .header_guideline{
+    height: 10vh;
+    max-width: 1200px;
+    margin: $mar1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header_left{
+      font-size: 35px;
+      color: $whiteColor;
+      padding-left: 20px;
+      width: 30%;
+    }
+    .header_right{
+      width: 70%;
+      .Difficulty_level{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        li{
+          padding-right: 30px;
+          a{
+            text-decoration: none;
+            font-size: 20px;
+            color: $whiteColor;
+          }
         }
       }
     }
@@ -35,8 +45,83 @@ body{
 }
 // ヘッダー部分ここまで
 
+.main_c_guideline{
+  max-width: 1000px;
+  margin: $mar1;
+}
+
+// 見出しの部分ここから
 .title{
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
   padding: 50px 20px;
+}
+// 見出しの部分ここまで
+// 利用者がアクション起こす場所のcss
+.youser_put_number{
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  #text,
+  button{
+    font-size: large;
+    text-align: center;
+    border: solid 2px black;
+  }
+  #text{
+    width: 50%;
+    height: 60%;
+    display: block;
+  }
+  button{
+    width: 20%;
+    height: 67%;
+    background-color: $whiteColor;
+  }
+}
+
+// jsで作用する場所のcssの記述
+.js_results{
+  max-width: 1100px;
+  height: 50vh;
+  margin: $mar1;
+  .farst_results,
+  .total_results{
+    width: 80%;
+    margin: $mar1;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 40px;
+  }
+  .total_results{
+    display: flex;
+    .againbutton,
+    .totaltaime{
+      margin: $mar1;
+    }
+    .againbutton{
+      width: 15%;
+      background-color:rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+footer{
+  background-color: rgb(104, 124, 30) ;
+  height: 10vh;
+  width: 100%;
+  .footerguideline{
+    max-width: 800px;
+    margin:$mar1;
+    position: absolute;
+    p{
+      text-align: center;
+      padding-top: 4%;
+      position: relative;
+      top :50%;
+      left: 50%;
+    }
+  }
 }

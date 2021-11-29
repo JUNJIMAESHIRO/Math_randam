@@ -2,11 +2,17 @@
 body {
   font-family: "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
   font-size: 20px;
+  background-color: #e5eee7;
 }
 
 .top {
+  background-color: #687c1e;
+}
+
+.top .header_guideline {
   height: 10vh;
-  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,21 +22,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #687c1e;
 }
 
-.top .header_left {
+.top .header_guideline .header_left {
   font-size: 35px;
   color: white;
   padding-left: 20px;
   width: 30%;
 }
 
-.top .header_right {
+.top .header_guideline .header_right {
   width: 70%;
 }
 
-.top .header_right .Difficulty_level {
+.top .header_guideline .header_right .Difficulty_level {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,19 +47,104 @@ body {
           align-items: center;
 }
 
-.top .header_right .Difficulty_level li {
+.top .header_guideline .header_right .Difficulty_level li {
   padding-right: 30px;
 }
 
-.top .header_right .Difficulty_level li a {
+.top .header_guideline .header_right .Difficulty_level li a {
   text-decoration: none;
   font-size: 20px;
   color: white;
 }
 
+.main_c_guideline {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .title {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
   padding: 50px 20px;
+}
+
+.youser_put_number {
+  text-align: center;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.youser_put_number #text,
+.youser_put_number button {
+  font-size: large;
+  text-align: center;
+  border: solid 2px black;
+}
+
+.youser_put_number #text {
+  width: 50%;
+  height: 60%;
+  display: block;
+}
+
+.youser_put_number button {
+  width: 20%;
+  height: 67%;
+  background-color: white;
+}
+
+.js_results {
+  max-width: 1100px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.js_results .farst_results,
+.js_results .total_results {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 40px;
+}
+
+.js_results .total_results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.js_results .total_results .againbutton,
+.js_results .total_results .totaltaime {
+  margin: 0 auto;
+}
+
+.js_results .total_results .againbutton {
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+footer {
+  background-color: #687c1e;
+  height: 10vh;
+  width: 100%;
+}
+
+footer .footerguideline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer .footerguideline p {
+  text-align: center;
+  padding-top: 4%;
 }
 /*# sourceMappingURL=style.css.map */
